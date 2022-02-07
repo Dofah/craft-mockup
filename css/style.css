@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body{
+
+  display: block;
+}
+
+
+header {
+  padding-top: 50px;
+  height: 60px;
+  width: 100vw;
+  color: #ffffff;
+  display: flex; 
+}
+
+.lien{
+
+  color: black;
+  flex: block;
+  font-family: 'Ginger Regular';
+  font-size: 17px;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.lien:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.lien:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+.titre{
+  color: rgb(110, 231, 183);
+  font-family: 'Ginger Regular';
+}
+
+
+
+
+.section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 300px;
+  justify-content: center;
+  margin-left: 256px;
+  margin-right: 256px;
+  
+
+}
+
+.gauche2{
+  display:block;
+  align-items: center;
+}
+
+
+.titresection{
+  font-family: 'Ginger Regular';
+  font-size: 72px;
+  display: block;
+}
+
+.soustitre{
+  font-family: 'Ginger Regular';
+  font-size: 24px;
+  display: block;
+}
+
+.img{
+  display: block;
+  height: 409px;
+  width: 768px;
+}
+
+
+.gauche{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin: 5px;
+  margin-left: 256px;  
+}
+
+.droite{
+  display: flex;
+  align-items: center; 
+  justify-content: flex-end;
+  width: 50%;
+  margin: 5px;
+  gap: 15px;
+  margin-right: 256px;
+  font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* IMPORTATION DES FONTS */
+@font-face {
+  font-family: 'Ginger Regular';
+  src: url(ginger.ttf) format("truetype");
+}
+
+
+
+/*RESOLUTION MOBILE*/
+
+
+@media screen and (max-width: 1900px) {
+  
+  .section{
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  html, body {
+  height: 100%;
+  overflow: scroll;
+  }
+
+
+
+
+}
+
+
+
+
+
+
